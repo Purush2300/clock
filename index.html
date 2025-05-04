@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer</title>
+    <link rel="stylesheet" href="fortimer.css">
+</head>
+<body>
+    <div class="main">
+        <div class="main2">
+        <span id="hrs">00</span>
+        <span >:</span>
+        <span id="min">00</span>
+        <span>:</span>
+        <span id="sec">00</span>
+        </div>
+    </div>
+    <script>
+        let hrs=document.getElementById("hrs");
+        let min=document.getElementById("min");
+        let sec=document.getElementById("sec");
+
+        
+  
+       setInterval(()=>{
+        let timer=new Date()
+        hrs.innerHTML=(timer.getHours()<10?"0":"")+timer.getHours()
+        min.innerHTML=(timer.getMinutes()<10?"0":"")+timer.getMinutes() 
+        sec.innerHTML=(timer.getSeconds()<10?"0":"")+timer.getSeconds()
+       },1000)
+       
+    </script>
+</body>
+</html>

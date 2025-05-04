@@ -1,0 +1,15 @@
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 100px;
+  
+    background: linear-gradient(45deg,rgba(21, 131, 54, 0.333),#d33434);
+   
+}
+.main2{
+    background: linear-gradient(45deg,#298,#999);
+    border: 2px;
+    border-radius: 10px;
+}
